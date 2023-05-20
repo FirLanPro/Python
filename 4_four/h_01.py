@@ -3,8 +3,8 @@
 # 100 -> 1 (1 + 0 + 0) 
 
 number = input('введите число: ')
-summa = 0 
 length= len(number)
+summa = 0
 k = range(length)
 if length == 3:
     for i in k:
