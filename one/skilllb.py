@@ -1,6 +1,7 @@
-print ("Система расчета штрафов")
-car_speed = 147
-is_town = Trye
+print ("Система расчета штрафов. скорость:")
+car_speed = 147 # скорость
+print(car_speed)
+is_town = True
 
 fine_for_20_to_40 = 500
 fine_for_40_to_60 = 500

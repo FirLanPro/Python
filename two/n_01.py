@@ -9,9 +9,9 @@ print(n)
 
 
 # None нулевое значение ?
-m = None
-print(m) 
+n1 = None
+print(n1) 
 
 # дробное значение
-k = 1.89
-print(k)
+n2 = 1.89
+print(n2)
