@@ -18,8 +18,12 @@ if n != 0 and m != 0:
     if k % 2 == 0:
         if n == k or m == k:
             print("yes")
-        elif n*m-k>0:
-            print("yes")
+        elif n>k or m>k:
+            print("no")
+        elif k < m * n:
+            if k % m ==0 or k % n ==0:
+                print("yes")
+        else: print("no")
         k = k + 1
     elif n == k or m == k:
         print("yes")
