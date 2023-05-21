@@ -20,8 +20,6 @@ if n != 0 and m != 0:
             print("yes")
         elif n == k or m == k:
             print("yes")
-        elif n > k or m > k:
-            print("no")
         else:
             print("no")
     else:
