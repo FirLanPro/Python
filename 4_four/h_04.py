@@ -8,25 +8,23 @@
 # 3 2 1 -> no
 
 # общее количество долек: p
-# отломить K долек
+# отломить k долек
 
 
 n = int(input('n:'))
 m = int(input('m:'))
 k = int(input('k:'))
 if n != 0 and m != 0:
-    if k % 2 == 0:
-        if n == k or m == k:
+    if m * n > k:
+        if k % m == 0 or k % n == 0:
             print("yes")
-        elif n>k or m>k:
+        elif n == k or m == k:
+            print("yes")
+        elif n > k or m > k:
             print("no")
-        elif k < m * n:
-            if k % m ==0 or k % n ==0:
-                print("yes")
-        else: print("no")
-        k = k + 1
-    elif n == k or m == k:
-        print("yes")
-    else: print("no")
+        else:
+            print("no")
+    else:
+        print("разлом не сделать")    
 else: print("шоколада нет")
 
