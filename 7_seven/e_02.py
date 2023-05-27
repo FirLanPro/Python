@@ -25,10 +25,13 @@ p = int(input('произведение:'))
 list_1 = [ i for i in range(1, 1001) if s - i == p / i and p > 0]
 if len(list_1) == 1:
     print('x=y')
-
+elif len(list_1) == 0:
+    print('таких x y нет')
 if p <= 0 or s <= 0:
     print('задайте числа больше 0')
-print(*list_1)
+print('x, у:', *list_1)
+if s >= 2000 or p >= 1000000:
+    print('по условию X,Y≤1000')
 
 
 
