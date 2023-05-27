@@ -25,7 +25,7 @@ p = int(input('произведение:'))
 list_1 = [ i for i in range(1, 1001) if s - i == p / i and p > 0]
 
 if len(list_1) == 1:
-    print('x=y', *list_1)
+    print('x=y=', *list_1)
 elif len(list_1) == 2:
     print('x, у:', *list_1)
 elif len(list_1) == 0:
