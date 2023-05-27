@@ -5,3 +5,30 @@
 # Выведите минимальное количество монет, которые нужно перевернуть
 # 5 -> 1 0 1 1 0
 # 2
+
+n = int(input('введите количество монет: '))
+list_1 = []
+eagle = 0
+tails= 0
+m = range(n)
+for i in m:
+    k = int(input('введите 1 - орёл, 0 - решка: '))
+    if k == 1:
+        eagle += 1
+    elif k == 0:
+        tails +=1
+    else: 
+        print('вводите числа 1 или 0 (орёл, решка) ')
+        break
+if eagle < tails:
+    print('минимальное число монеток', eagle)
+elif tails < eagle:
+    print('минимальное число монеток', tails) 
+elif eagle == tails and tails != 0:
+    print('минимальное число монеток', tails)
+elif eagle == tails == 0:
+    print('монет нет') 
+
+
+
+
