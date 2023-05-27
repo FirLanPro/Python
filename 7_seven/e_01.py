@@ -16,7 +16,7 @@ for i in m:
     if k == 1:
         eagle += 1
     elif k == 0:
-        tails +=1
+        tails += 1
     else: 
         print('вводите числа 1 или 0 (орёл, решка) ')
         break
