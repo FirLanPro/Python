@@ -11,7 +11,16 @@
 #     3
 #     -> 1
 
+import random
+
 n = int(input('количество элементов в массиве: '))
+list_1 = [random.randint(1,10) for i in range(1, n+1) if n > 0]
+print(*list_1)
 x = int(input('некоторое число X: '))
-for i in range(1, n+1):
-    print(i)
+count = 0
+for i in range( n):
+    if list_1[i] == x:
+        count +=1
+print('встречается', count, 'раз(а)')
+
+

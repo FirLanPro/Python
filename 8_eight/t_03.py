@@ -27,18 +27,31 @@
 #     12
 
 list_1 = input('введите слово только на русском или только на английском: ')
-list_2 =list_1.lower()
+list_2 =list_1.upper()
 
 count = 0
 
-n = len(list_2)
-for i in n:
-    if 'A' or 'E' or 'I' or 'O' or 'U' or 'L' or 'N'or 'S' or 'T' or 'R' in list_1[i]:
-        count += 1
-        print(count)
-    if 'D' or 'G' in list_1[i]:
-        count += 2 
-        print(count)
+# if 'A' or 'E' or 'I' or 'O' or 'U' or 'L' or 'N'or 'S' or 'T' or 'R' in list_2:
+#     count += 1
+#     print(count)
+# if 'D' or 'G' in list_2:
+#     count += 2 
+#     print(count)
+for i in 
+if 'А'or 'В'or 'Е'or 'И'or 'Н'or 'О'or 'Р'or 'С'or 'Т' in list_2:
+    count += 1 
+if  'Д'or 'К'or 'Л'or 'М'or 'П'or 'У' in list_2:
+    count += 2 
+if 'Б'or 'Г'or 'Ё'or 'Ь'or 'Я' in list_2:
+    count += 3  
+if 'Й'or 'Ы' in list_2:
+    count +=4 
+if 'Ж'or 'З'or 'Х'or'Ц'or 'Ч' in list_2:
+    count +=5 
+if 'Ш'or'Э'or 'Ю'in list_2:
+    count +=8 
+if 'Ф'or 'Щ'or 'Ъ' in list_2:
+    count += 10 
 print(count)
 
 
