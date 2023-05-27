@@ -8,10 +8,27 @@
 # 4 4 -> 2 2
 # 5 6 -> 2 3
 
-s = int(input('s:'))
-p = int(input('p:'))
+# Натуральные числа - целые положительные числами. x>, y>0
+# сумму чисел S
+# произведение P. при x>0 и y>0  --->  P!=0, P>0
+# x+y=s --> x=s-y --> y=s-x  
+# x*y=p --> x=p/y --> y=p/x 
+# x= s-y=p/y
+# y= s-x=p/x
 
-for i in range() ?
+# при x=y, вывод только отдного числа
+#
 
-print(y)
-print(x)
+s = int(input('сумма:'))
+p = int(input('произведение:'))
+
+list_1 = [ i for i in range(1, 1001) if s - i == p / i and p > 0]
+if len(list_1) == 1:
+    print('x=y')
+
+if p <= 0 or s <= 0:
+    print('задайте числа больше 0')
+print(*list_1)
+
+
+
