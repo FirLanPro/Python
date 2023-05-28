@@ -12,28 +12,33 @@
 
 import random
 
+number = 10
 n = int(input('количество элементов в массиве: '))
-list_1 = [random.randint(1,10) for i in range(1, n+1) if n > 0]
+list_1 = [random.randint(1,number) for i in range(1, n+1) if n > 0]
 print(*list_1)
 x = int(input('некоторое число X: '))
-count = 0
+
+count = 1
 count_1 = 0
-for i in range(n):
-   if  count < list_1[i] < x:
-        count = list_1[i]
-   if count < list_1[i] > x:
-        count_1 = list_1[i]
 
-m = (count_1-count) // 2
-for i in range(1,m+1):
-    if x-i != count:
-        print('4444',count)
-    if x+i != count_1:
-        print('555',count_1)
-    if  x+1 == x-1:
-        print('666',count_1,count)
 
-print('111',m)
-print('2222',count)
-print('3333',count_1)
+for j in range(count+1):
+    for i in range(n-1):
+        if x - count == list_1[i]:
+            count_1 = list_1[i]
+        if x + count == list_1[i]:
+            count_1 = list_1[i]
+    if count_1 == 0:
+        count += 1      
+print(count_1)
+      
+
+# if count_1 != 0 and count_2 != 0:
+#     print("2 ближайших по величине элемента")       
+
+
+
+
+
+
 
