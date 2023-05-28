@@ -27,32 +27,16 @@
 #     12
 
 list_1 = input('введите слово только на русском или только на английском: ')
-list_2 =list_1.upper()
+list_2 = list_1.upper()
 
 count = 0
 
-# if 'A' or 'E' or 'I' or 'O' or 'U' or 'L' or 'N'or 'S' or 'T' or 'R' in list_2:
-#     count += 1
-#     print(count)
-# if 'D' or 'G' in list_2:
-#     count += 2 
-#     print(count)
-for i in 
-if 'А'or 'В'or 'Е'or 'И'or 'Н'or 'О'or 'Р'or 'С'or 'Т' in list_2:
-    count += 1 
-if  'Д'or 'К'or 'Л'or 'М'or 'П'or 'У' in list_2:
-    count += 2 
-if 'Б'or 'Г'or 'Ё'or 'Ь'or 'Я' in list_2:
-    count += 3  
-if 'Й'or 'Ы' in list_2:
-    count +=4 
-if 'Ж'or 'З'or 'Х'or'Ц'or 'Ч' in list_2:
-    count +=5 
-if 'Ш'or'Э'or 'Ю'in list_2:
-    count +=8 
-if 'Ф'or 'Щ'or 'Ъ' in list_2:
-    count += 10 
-print(count)
+eng = 'qwertyuiopasdfghjklzxcvbnm'
 
+rus = 'йцукенгшщзхъфывапролджэячсмитьбюё'
 
+list_1 = {1:'AEIOULNSTR', 2:'DG', 3:'BCMP',
+        4:'FHVWY', 5:"K" , 8:'JX', 10:'QZ'}
+list_Russian = {1:'АВЕИНОРСТ', 2:'ДКЛМПУ', 3:'БГЁЬЯ',
+                4:'ЙЫ', 5:'ЖЗХЦЧ', 8:'ШЭЮ', 10:'ФШЪ'}
 
