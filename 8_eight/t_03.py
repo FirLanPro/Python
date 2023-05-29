@@ -28,15 +28,28 @@
 
 list_1 = input('введите слово только на русском или только на английском: ')
 list_2 = list_1.upper()
-
+list_5 = list_1.lower()
+length = len(list_2)
 count = 0
 
 eng = 'qwertyuiopasdfghjklzxcvbnm'
 
 rus = 'йцукенгшщзхъфывапролджэячсмитьбюё'
 
-list_1 = {1:'AEIOULNSTR', 2:'DG', 3:'BCMP',
+list_3 = {1:'AEIOULNSTR', 2:'DG', 3:'BCMP',
         4:'FHVWY', 5:"K" , 8:'JX', 10:'QZ'}
-list_Russian = {1:'АВЕИНОРСТ', 2:'ДКЛМПУ', 3:'БГЁЬЯ',
+list_4= {1:'АВЕИНОРСТ', 2:'ДКЛМПУ', 3:'БГЁЬЯ',
                 4:'ЙЫ', 5:'ЖЗХЦЧ', 8:'ШЭЮ', 10:'ФШЪ'}
+
+for i in list_5:
+        if i in eng:
+                print('ang')
+
+        elif i in rus:
+                print('rus')
+        
+for item in
+        
+   for (k, v) in     items():
+item.values()
 
