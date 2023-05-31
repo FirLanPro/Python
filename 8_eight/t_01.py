@@ -11,16 +11,22 @@
 #     3
 #     -> 1
 
+# рандомный массив от 1 по 10
+
 import random
 
-n = int(input('количество элементов в массиве: '))
+n = int(input('количество элементов в массиве, (натуральное число): '))
 list_1 = [random.randint(1,10) for i in range(1, n+1) if n > 0]
 print(*list_1)
-x = int(input('некоторое число X: '))
-count = 0
-for i in range( n):
-    if list_1[i] == x:
-        count +=1
-print('встречается', count, 'раз(а)')
+if n <= 0:
+    print('натуральное число от 1 и выше')
+else:
+    x = int(input('некоторое число X: '))
+    count = 0
+    for i in range(n):
+        if list_1[i] == x:
+            count +=1
+
+    print('встречается', count, 'раз(а)')
 
 
