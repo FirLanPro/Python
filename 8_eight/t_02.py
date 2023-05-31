@@ -10,46 +10,49 @@
 #     6
 #     -> 5
 
-# если ближайших элемента 2, выводи оба(+-1, +-2, и т.д.)
-# 1 способ:
-# import random
-# n = int(input('количество элементов в массиве: '))
-# list_1 = [random.randint(1,10) for i in range(1, n+1) if n > 0]
-# print(*list_1)
-# x = int(input('некоторое число X: '))
-# count = 1
-
-# list_2 = []
-# for j in range(count+1):
-#     for i in range(n):
-#         if  x - count == list_1[i] >0 :
-#             list_2.append(list_1[i])
-#         if x + count == list_1[i]:
-#             list_2.append(list_1[i])
-#     if len(list_2) == 0 or : #####
-#         count += 1
-        
-# print(set(list_2))
-
-
-# 2 способ:
-
+# если ближайших по величине элемента 2, выводит оба  (+-1, +-2, и т.д.)
+# 
 import random
 n = int(input('количество элементов в массиве: '))
 list_1 = [random.randint(1,10) for i in range(1, n+1) if n > 0]
-print(*list_1)
-x = int(input('некоторое число X: '))
-count = 1
-count_1 = 0
-for j in range(count+1):
-    for i in range(n):
-        if x - count == list_1[i] > 0 :
-            count_1 = list_1[i]
-        if x + count == list_1[i]:
-            count_1 = list_1[i]
-    if count_1 == 0:
+if n > 0:
+    print(*list_1)
+    x = int(input('некоторое число X: '))
+    count = 1
+    list_2 = []
+    while len(list_2) == 0:
+        for i in range(n):
+            if  x - count == list_1[i] > 0 :
+                list_2.append(list_1[i])
+            if x + count == list_1[i]:
+                list_2.append(list_1[i])
         count += 1
-print(count_1)
+    print('->', set(list_2))
+else:
+    print("натуральное число от 1 и выше")
+
+
+
+# если ближайших элемента 2, выводит только 1 элемент
+
+# import random
+# n = int(input('количество элементов в массиве(натуральное число): '))
+# list_1 = [random.randint(1,10) for i in range(1, n+1) if n > 0]
+# if n > 0:
+#     print(*list_1)
+#     x = int(input('некоторое число X: '))
+#     count = 1
+#     count_1 = 0
+#     while count_1 == 0:
+#         for i in range(n):
+#             if x - count == list_1[i] > 0 :
+#                 count_1 = list_1[i]
+#             if x + count == list_1[i]:
+#                 count_1 = list_1[i]
+#         count += 1
+#     print('->", count_1)
+# else:
+#     print("натуральное число от 1 и выше")
 
 
 
