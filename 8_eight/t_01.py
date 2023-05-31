@@ -17,10 +17,11 @@ import random
 
 n = int(input('количество элементов в массиве, (натуральное число): '))
 list_1 = [random.randint(1,10) for i in range(1, n+1) if n > 0]
-print(*list_1)
+
 if n <= 0:
     print('натуральное число от 1 и выше')
 else:
+    print(*list_1)
     x = int(input('некоторое число X: '))
     count = 0
     for i in range(n):
