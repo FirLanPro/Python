@@ -26,36 +26,41 @@
 # ноутбук
 #     12
 
-# list_1 = input('введите слово только на русском или только на английском: ')
-# list_2 = list_1.upper()
-# list_5 = list_1.lower()
-# length = len(list_2)
+text = input('введите одно слово только на русском или только на английском: ')
+list_1 = text.upper()
+list_2 = text.lower()
+length = len(text)
 
+eng = 'qwertyuiopasdfghjklzxcvbnm'
 
-# eng = 'qwertyuiopasdfghjklzxcvbnm'
+rus = 'йцукенгшщзхъфывапролджэячсмитьбюё'
 
-# rus = 'йцукенгшщзхъфывапролджэячсмитьбюё'
+ang_list = {1:'AEIOULNSTR', 2:'DG', 3:'BCMP',
+        4:'FHVWY', 5:"K" , 8:'JX', 10:'QZ'}
+ 
+rus_list= {1:'АВЕИНОРСТ', 2:'ДКЛМПУ', 3:'БГЁЬЯ', 
+        4:'ЙЫ', 5:'ЖЗХЦЧ', 8:'ШЭЮ', 10:'ФШЪ'}
 
-# list_3 = {1:'AEIOULNSTR', 2:'DG', 3:'BCMP',
-#         4:'FHVWY', 5:"K" , 8:'JX', 10:'QZ'}
-# list_4= {1:'АВЕИНОРСТ', 2:'ДКЛМПУ', 3:'БГЁЬЯ',
-#                 4:'ЙЫ', 5:'ЖЗХЦЧ', 8:'ШЭЮ', 10:'ФШЪ'}
+sum = 0
+t = 0
 
-# for i in list_5:
-#         if i in eng:
-#                 print('ang')
-
-#         elif i in rus:
-#                 print('rus')
-# for j in list_2:
-#         for item in list_3:
-#                 if j == 
-#                         print(item)
-
-
-        
-# for item in
-        
-#    for (k, v) in     items():
-# item.values()
-
+for i in list_2:
+    if i in eng:
+        t += 1
+        if t == length:
+            print('ang')
+            for j in list_1:
+                for key, value in ang_list.items():
+                    if j in value:
+                        sum += key
+    elif i in rus:
+        t += 1
+        if t == length:
+            print('rus')
+            for j in list_1:
+                for key, value in rus_list.items():
+                    if j in value:
+                        sum += key
+print(sum)
+            
+ 
