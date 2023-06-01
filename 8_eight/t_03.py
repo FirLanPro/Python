@@ -26,41 +26,39 @@
 # ноутбук
 #     12
 
+# если в слове есть англ и рус буквы, или другие символы, result возвращает 0.
+
 text = input('введите одно слово только на русском или только на английском: ')
 list_1 = text.upper()
 list_2 = text.lower()
-length = len(text)
 
 eng = 'qwertyuiopasdfghjklzxcvbnm'
 
 rus = 'йцукенгшщзхъфывапролджэячсмитьбюё'
 
-ang_list = {1:'AEIOULNSTR', 2:'DG', 3:'BCMP',
+en_list = {1:'AEIOULNSTR', 2:'DG', 3:'BCMP',
         4:'FHVWY', 5:"K" , 8:'JX', 10:'QZ'}
  
 rus_list= {1:'АВЕИНОРСТ', 2:'ДКЛМПУ', 3:'БГЁЬЯ', 
         4:'ЙЫ', 5:'ЖЗХЦЧ', 8:'ШЭЮ', 10:'ФШЪ'}
 
-sum = 0
-t = 0
+length = len(text)
+length_text = 0
+length_text_2 = 0
+result = 0
 
 for i in list_2:
     if i in eng:
-        t += 1
-        if t == length:
-            print('ang')
-            for j in list_1:
-                for key, value in ang_list.items():
-                    if j in value:
-                        sum += key
+        length_text += 1
+        if length_text == length:
+            print('EN')
+            result = sum([key for j in list_1 for key, value in en_list.items() if j in value])
     elif i in rus:
-        t += 1
-        if t == length:
+        length_text_2 += 1
+        if length_text_2 == length:
             print('rus')
-            for j in list_1:
-                for key, value in rus_list.items():
-                    if j in value:
-                        sum += key
-print(sum)
+            result = sum([key for j in list_1 for key, value in rus_list.items() if j in value]) 
+
+print(result)
             
  
