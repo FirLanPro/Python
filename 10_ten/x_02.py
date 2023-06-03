@@ -15,3 +15,17 @@
 # находясь перед некоторым кустом заданной во входном файле грядки.
 # 4 -> 1 2 3 4
 # 9
+
+n = int(input('введите количество кустов: '))
+
+list_1 = []
+count = 0
+for i in range(1, n+1):
+    list_1.append(i)
+for i in range(1, n-1):
+    count_1 = list_1[i] + list_1[i-1] + list_1[i+1]
+    if count_1 > count:
+        count = count_1
+
+print(list_1)
+print(count)
