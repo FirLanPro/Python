@@ -95,3 +95,13 @@ read | [ссылка](1_one/sk_read.md)
 - u_05 |[КОД](11_eleven/u_05.py)| быстрая сортировка
 - u_06 |[КОД](11_eleven/u_06.py)| сортировка слиянием
 
+## 12_twelve: Seminsr:
+
+- 
+
+## 13_thirteen: HomeWork:
+
+-
+-
+
+
