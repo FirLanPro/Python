@@ -8,7 +8,7 @@ print(modul_1.max1(5, 9))
 from modul_1 import max1
 print(max1(3, 4))
 
-# импорт на прямую всех функций 
+# импорт напрямую всех функций 
 from modul_1 import *
 print(max1(6, 4))
 
