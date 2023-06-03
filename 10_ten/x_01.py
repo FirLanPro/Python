@@ -21,6 +21,7 @@ list_2 = set(list_2)
 
 c = list_1.intersection(list_2)
 
-print(list_1)
+print(list_1) 
 print(list_2)
 print(c)
+# вывод по возрастанию
