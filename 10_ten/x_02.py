@@ -16,16 +16,30 @@
 # 4 -> 1 2 3 4
 # 9
 
+# если на кусте значение -x, присваивается значение 0.
 n = int(input('введите количество кустов: '))
-
-list_1 = []
-count = 0
-for i in range(1, n+1):
-    list_1.append(i)
-for i in range(1, n-1):
-    count_1 = list_1[i] + list_1[i-1] + list_1[i+1]
-    if count_1 > count:
-        count = count_1
-
-print(list_1)
-print(count)
+if n > 2:
+    list_1 = []
+    for i in range(n):
+        x =  int(input('количество ягод на кусте: '))
+        if x >= 0:
+            list_1.append(x)
+        else:
+            print('количество ягод меньше нуля быть не может.на кусте нуль ягод')
+            list_1.append(0)
+    count = 0
+    list_2 = []
+    for i in range(n-1):
+        list_2.append(list_1[i] + list_1[i-1] + list_1[i+1])
+    list_2.append(list_1[-2] + list_1[-1] + list_1[0])
+    length = len(list_2)
+    for j in range(length-1):
+        if list_2[j] > count:
+            count = list_2[j]
+    print('на каждом кусте', list_1)
+    print('сумма', list_2)
+    print('максимальное количество ягод за один заход: ', count)
+elif 0 < n <=2:
+    print('модуль собирает с этого куста и с двух соседних с ним. количество кустов > 2')
+else:
+    print("нет кустов со значением больше нуля, нет ягод")
