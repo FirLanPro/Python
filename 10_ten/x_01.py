@@ -10,18 +10,31 @@
 # 3 6 9 12 15 18
 # 6 12
 
-import random
+# import random
 n = int(input('количество элементов первого множества: '))
 m = int(input('количество элементов второго множества: '))
-list_1 = [random.randint(1,10) for i in range(1, n+1) if n > 0]
-list_2 = [random.randint(1,10) for i in range(1, m+1) if m > 0]
 
-list_1 = set(list_1)
-list_2 = set(list_2)
+if m > 0 and n > 0:
+    list_1 = [input('элемент первого множества: ') for i in range(n)]
+    list_2 = [input('элемент второго множества: ') for i in range(m)]
 
-c = list_1.intersection(list_2)
+    print(list_1) 
+    print(list_2)
 
-print(list_1) 
-print(list_2)
-print(c)
-# вывод по возрастанию
+    list_3 = set(list_1).intersection(set(list_2))
+    print(list_3)
+
+    list_3 = list(list_3)
+    length = len(list_3)
+    count = length
+    storage = 0
+    while count > 0:
+        for i in range(length-1):
+            if list_3[i] > list_3[i+1]:
+                storage = list_3[i]
+                list_3[i] = list_3[i+1]
+                list_3[i+1] = storage
+        count -= 1
+    print(list_3)
+else:
+    print("вводите количество элементов значением больше нуля")
