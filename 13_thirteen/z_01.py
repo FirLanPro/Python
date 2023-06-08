@@ -6,5 +6,12 @@
 # A = 3; B = 5 -> 243 (3⁵)
 #     A = 2; B = 3 -> 8 
 
-def degree(a,b):
+# a и b целые положительные числа
+
+from z_01_02_mod import Degree
+
+a = int(input("введите число: "))
+b = int(input("введите степень: "))
+
+print(Degree(a, b))
     

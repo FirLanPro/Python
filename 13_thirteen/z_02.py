@@ -6,3 +6,9 @@
 # 2 2
 #     4 
 
+from z_01_02_mod import Sum
+
+a = int(input("a= "))
+b = int(input("b= "))
+
+print(Sum(a, b))
