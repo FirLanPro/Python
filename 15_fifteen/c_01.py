@@ -4,3 +4,10 @@
 # Каждое число вводится с новой строки.
 # Ввод: 7 2 5
 # Вывод: 7 9 11 13 15
+
+number_1= int(input("первый элемент: "))
+number_2 = int(input("разность: "))
+number_3 = int(input("количество элементов: "))
+
+list_1 = [number_1 + (i - 1) * number_2 for i in range(1, number_3 + 1)]
+print(*list_1)
