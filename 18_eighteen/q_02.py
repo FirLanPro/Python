@@ -12,3 +12,15 @@
 # 4 8 12 16 20 24
 # 5 10 15 20 25 30
 # 6 12 18 24 30 36
+
+# таблица умножения
+
+def print_operation_table(operation, rows , columns):
+    if rows  >= 2 and columns >= 2:
+        for i in range(1, rows + 1):
+            list_1 = [i*j for j in range(1,columns + 1)]
+            print(*list_1)
+    else:
+        print("нет пересечения строки и столбца, для ВЫЧИСЛЕНИЯ элемента таблицы. Нумерация с единицы")  
+print_operation_table(lambda x, y:x*y,int(input('число строк: ')),int(input('число столбцов: ')))
+
