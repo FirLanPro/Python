@@ -144,3 +144,10 @@ read | [ссылка](1_one/sk_read.md)
 
 - q_01|[КОД](18_eighteen/q_01.py)| Винни-Пух. слоги
 - q_02|[КОД](18_eighteen/q_02.py)| вывод таблицы умножения. ввод строк и столбцов
+
+## 19_nineteen: Seminar:
+- s_01|[КОД](19_nineteen/s_01.py)| телефонный справочник 
+- [text.txt](19_nineteen/text.txt)
+
+## 20_twenty: HomeWork:
+- v_01|[КОД]()|
