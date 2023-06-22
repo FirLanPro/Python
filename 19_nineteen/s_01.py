@@ -17,29 +17,29 @@
 import os
 
 def show_contacts(file_name):
-    os.system('CLS')
+    os.system("clear")
     with open(file_name, 'r') as file:
         data = file.readlines()
 
         for contact in data:
             print(contact, end='')
 
-    input('\n!!!!!!!!!!')
+    input('\nнажмите Enter')
 
 def add_contact(file_name):
-    os.system('CLS')
+    os.system("clear")
     with open(file_name, 'a') as file:
         res = ''
         res += input('фамилия  ') + ' '
         res += input('имя  ') + ' '
         res += input('№ телефона  ')
 
-        file.write('\n'+ res )
+        file.write( res )
 
-    input('!!!!!!!!!!')
+    input('нажмите Enter')
 
 def search_contact(file_name):
-    os.system('CLS')
+    os.system("clear")
     target = input(' имя ')
 
     with open(file_name, 'r' ) as file:
@@ -51,19 +51,19 @@ def search_contact(file_name):
         else:
             print('контакта с таким именем нет')
 
-    input('!!!!!!!!!!')
+    input('нажмите Enter')
 
 def drawing():
     print('1-show contacts')
     print('2-add contacts')
     print('3-search contacts')
-    print('4-exit contacts')
+    print('4-exit')
 
 def main(file_name):
     while True:
-        os.system('CLS')
+        os.system("clear")
         drawing()
-        user_choice = int(input('введите число от 1 до 4   '))
+        user_choice = int(input('введите число от 1 до 4:   '))
         
         if user_choice == 1:
             show_contacts(file_name)
