@@ -161,4 +161,6 @@ read | [ссылка](1_one/sk_read.md)
 
 - j_01|[md файл](22_twenty_two/j_01.md)| Знакомство с аналитикой
 
+## 23_twenty_three: HomeWork:
 
+- l_01|[md файл](23_twenty_three/l_01.md)| Знакомство с аналитикой
