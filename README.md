@@ -152,3 +152,8 @@ read | [ссылка](1_one/sk_read.md)
 ## 20_twenty: HomeWork:
 - v_01|[КОД](20_twenty/v_01.py)| телефонный справочник, изменение и удаление данных
 - [text.txt](20_twenty/text.txt)
+
+## 21_twenty_one: Seminar:
+
+- g_01|[md файл](21_twenty_one/g_01.md)| https://colab.research.google.com/ Знакомство с аналитикой
+
