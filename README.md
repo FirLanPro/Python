@@ -157,3 +157,8 @@ read | [ссылка](1_one/sk_read.md)
 
 - g_01|[md файл](21_twenty_one/g_01.md)| https://colab.research.google.com/ Знакомство с аналитикой
 
+## 22_twenty_two: Seminar:
+
+- j_01|[md файл](22_twenty_two/j_01.md)| Знакомство с аналитикой
+
+
