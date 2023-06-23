@@ -159,8 +159,15 @@ read | [ссылка](1_one/sk_read.md)
 
 ## 22_twenty_two: Seminar:
 
-- j_01|[md файл](22_twenty_two/j_01.md)| Знакомство с аналитикой
+- j_01|[md файл](22_twenty_two/j_01.md)| Знакомство с аналитикой. табличные данные
 
 ## 23_twenty_three: HomeWork:
 
-- l_01|[md файл](23_twenty_three/l_01.md)| Знакомство с аналитикой
+- l_01|[md файл](23_twenty_three/l_01.md)| Знакомство с аналитикой. табличные данные
+
+## 24_twenty_four: Seminar:
+
+- a_01|[md файл](24_twenty_four/a_01.md)| Знакомство с аналитикой. построение графиков
+
+## 25_twenty_five: 
+
